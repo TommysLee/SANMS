@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python 3.8+" />
-  <img src="https://img.shields.io/badge/License-Apache-yellow.svg" alt="License: Apache" />
+  <img src="https://img.shields.io/badge/License-Apache_2.0-yellow.svg" alt="License: Apache" />
   <a href="tests/test_sanms.py"> <img src="https://img.shields.io/badge/tests-25%2F25-green.svg" alt="License: Apache" /> </a>
 </p>
 
