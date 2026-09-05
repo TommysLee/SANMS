@@ -1,0 +1,10 @@
+# Optional dependencies for full retrieval pipeline and feature extraction.
+# The core SANMS algorithm and synthetic experiments only need numpy + scipy.
+# Install with: pip install -r requirements-optional.txt
+
+torch>=1.10
+torchvision>=0.11
+Pillow>=8.3
+faiss-cpu>=1.7
+pycocotools>=2.0
+tqdm>=4.62

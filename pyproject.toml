@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sanms"
+version = "1.0.0"
+description = "Structure-Aware Non-Maximum Suppression: post-NMS refinement for subject detection in visual retrieval"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Li Zongjin", email = "li_zongjin@alumni.hust.edu.cn"}
+]
+keywords = [
+    "nms",
+    "non-maximum-suppression",
+    "object-detection",
+    "image-retrieval",
+    "visual-retrieval",
+    "post-processing",
+    "containment-detection",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache-2.0 License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+retrieval = [
+    "torch>=1.10",
+    "torchvision>=0.11",
+    "Pillow>=8.3",
+    "faiss-cpu>=1.7",
+]
+evaluation = [
+    "pycocotools>=2.0",
+    "tqdm>=4.62",
+]
+dev = [
+    "pytest>=7.0",
+]
+all = [
+    "torch>=1.10",
+    "torchvision>=0.11",
+    "Pillow>=8.3",
+    "faiss-cpu>=1.7",
+    "pycocotools>=2.0",
+    "tqdm>=4.62",
+    "pytest>=7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/TommysLee/SANMS"
+Repository = "https://github.com/TommysLee/SANMS"
+Issues = "https://github.com/TommysLee/SANMS/issues"
+
+[tool.setuptools.packages.find]
+include = ["sanms*", "experiments*"]
